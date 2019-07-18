@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+      <div class="container">
+          <div class="user-details">
+            <h3> Blog </h3>
+          </div>
+            {% for post in site.posts %}
+                  <div class="columns">
+                      <h5><a class="link" href="{{ post.url }}">{{ post.title }}</a></h5>
+                  </div>
+            {% endfor %}
+        
+    </div>
+</body>
